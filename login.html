@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        list-style: none;
+    }
+    body {
+        font-family: "微软雅黑", "黑体", "苹果丽黑";
+        background: #112A3C;
+        background-image: url(bg.jpg);
+    }
+    .content {
+        width: 650px;
+        margin: 40px auto;
+        border: 1px solid #D9DBDA;
+        background: #E9ECF1;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -200px 0 0 -326px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+    .login h1 {
+        color: #23B9DC;
+        font-size: 18px;
+        /*font-weight: normal;*/
+
+        margin-bottom: 20px;
+    }
+    .login {
+        float: right;
+        background: #FFF;
+        height: 260px;
+        display: inline-block;
+        font-size: 14px;
+        width: 340px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .login label {
+        margin-bottom: 4px;
+    }
+    .login form {
+        margin: 30px 40px;
+    }
+    .login * {
+        display: block;
+    }
+    .login button {
+        color: #FFF;
+        font-size: 14px;
+        background: #23B9DC;
+        padding: 8px 20px;
+        float: right;
+    }
+    .login input {
+        background: #F9F9F9;
+        width: 260px;
+        border: 1px solid #D5D6DA;
+        border-radius: 3px;
+        padding: 10px 0 10px 7px;
+        margin-bottom: 20px;
+        box-shadow: inset 0px 0px 2px #ffffff;
+    }
+    .notice {
+        background: #FCFCFC;
+        width: 309px;
+        height: 260px;
+        display: inline-block;
+        border-right: 1px solid #ECECEC;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .notice h1 {
+        font-size: 16px;
+        color: #A44A64;
+        margin: 30px 0 0 40px;
+    }
+    .notice p {
+        text-align: justify;
+        line-height: 1.5em;
+        font-size: 12px;
+        margin: 10px 40px 0 40px;
+        text-indent: 2em;
+        padding: 15px 10px;
+        background: #FFF;
+        word-break: break-all;
+        height: 150px;
+        overflow-y: auto;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.09);
+    }
+    .notice p span {
+        color: red;
+        font-weight: bold;
+    }
+    .logo {
+        position: absolute;
+    }
+    .top-bar {
+        width: 80%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .top-bar p {
+        display: inline-block;
+        margin-left: -60px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: -20px;
+        line-height: 50px;
+        color: #FFF;
+        vertical-align: bottom;
+    }
+    .top-bar img {
+        display: inline-block;
+    }
+    .footer {
+        border-top: rgba(202, 202, 202, 0.35) 1px solid;
+        position: absolute;
+        bottom: 0;
+        color: #EAEAEA;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        background: rgba(3, 0, 0, 0.06);
+    }
+    </style>
+</head>
+
+<body lang="zh">
+    <div class="top-bar">
+        <img src="logo.png" alt="">
+        <p>数云运营管理系统</p>
+    </div>
+    <div class="content">
+
+        <div class="login">
+            <form action="">
+                <h1>login</h1>
+                <!-- <label for="">用户名：</label> -->
+                <input type="text" placeholder="用户名">
+                <!-- <label for="">密码：</label> -->
+                <input type="text" placeholder="密码">
+                <button>login</button>
+            </form>
+        </div>
+        <div class="notice">
+            <h1>notice</h1>
+            <p>运营管理系统目前已与公司账号系统打通，
+                <span>现只能使用公司(wiki) 账号/密码 登录！</span>运营管理系统原有的一套 账号/密码 体系已作废，如果您曾在本系统注册过账号，则相应权限不受影响。之前未注册的用户，会给予一些基本模块权限， 如果需要开通更多权限，请联系相关负责人员，谢谢！</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>©Copyright 2014 - Yun Analytical Technology Co.,Ltd All rights reserved.</p>
+    </div>
+</body>
+
+</html>

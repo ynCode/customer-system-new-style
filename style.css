@@ -1,0 +1,217 @@
+/*simple css reset*/
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body {
+    font-size: 12px;
+    font-family: "微软雅黑", "黑体", "苹果丽黑";
+    overflow-y: hidden;
+}
+/*header start*/
+
+header {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    border-bottom: #969696 solid 1px;
+    width: 100%;
+    height: 70px;
+    background-image: url("bg.jpg");
+}
+header nav ul li {
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+header .active {
+    color: yellow;
+    border-top: 2px solid #FFF;
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px 2px 5px -1px rgba(13, 13, 13, 1);
+}
+header nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px 2px 5px -1px rgba(13, 13, 13, 1);
+}
+header nav ul li a {
+    padding: 25px 15px;
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+}
+header nav {
+    float: right;
+    display: inline-block;
+    height: 100%;
+    padding-right: 30px;
+}
+.logo {
+    background: transparent;
+    height: 100%;
+    width: 150px;
+    display: inline-block;
+}
+.logo img {
+    margin: 10px 30px;
+}
+.logo p {
+    display: inline-block;
+    margin-left: 130px;
+    font-size: 18px;
+    width: 10em;
+    font-weight: bold;
+    margin-top: -32px;
+    line-height: 18px;
+    color: #FFF;
+}
+.active {
+    text-shadow: 0 0 3px 1px #000;
+}
+/*header end*/
+/*side-bar start*/
+
+.side-bar {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    background: url("bg.jpg");
+    position: absolute;
+    top: 71px;
+    width: 36px;
+    top: 71px;
+    left: 0;
+    bottom: 0;
+}
+
+.side-bar:hover {
+    width: 190px;
+    border-right: 1px solid #969696;
+    background: #000;
+    background-image: url("bg.jpg");
+    position: absolute;
+    z-index: 1;
+}
+.side-bar:hover>.copyright, .side-bar:hover>nav {
+    display: block;
+}
+.side-bar:hover>nav ul li a p {
+    display: inline-block;
+}
+.side-bar nav {
+    margin-top: 20px;
+}
+.side-bar nav ul li a span {
+    display: inline-block;
+}
+.side-bar nav ul li a p {
+    display: none;
+}
+.side-bar nav ul li {
+    display: block;
+}
+.side-bar nav ul li ul li a {
+    font-size: 12px;
+    padding-left: 70px;
+    display: block;
+}
+.side-bar nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px 2px 5px -1px rgba(13, 13, 13, 1);
+}
+.side-bar nav ul li a {
+    line-height: 20px;
+    vertical-align: top;
+    font-size: 12px;
+    padding: 8px 0 8px 15px;
+    display: block;
+    color: #FFF;
+}
+.side-bar nav ul li ul {
+    display: none;
+    overflow: hidden;
+    height: 0;
+}
+.side-bar nav .active {
+    color: yellow;
+    border-left: white 2px solid;
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px 2px 5px -1px rgba(13, 13, 13, 1);
+}
+.side-bar nav ul li:hover>ul {
+    height: auto;
+    display: block;
+    padding-top: 5px;
+    transition: opacity .25s linear 0s, height .25s linear 0s;
+}
+.side-bar nav ul {
+    width: 100%;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    color: #CDCDCD;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    display: none;
+}
+.copyright p {
+    font-size: 10px;
+    line-height: 2em;
+}
+/*side-bar end*/
+/*font icon*/
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.icon {
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 16px;
+    margin: 5px 10px 5px -6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.side-bar:hover>nav ul li a span {
+    font-size: 12px;
+    margin: 0 10px 0 20px;
+}
+.competence:before {
+    content: "\e106";
+}
+.system:before {
+    content: "\e019";
+}
+.business:before {
+    content: "\e139";
+}
+.info-search:before {
+    content: "\e003";
+}
+.info-monitor:before {
+    content: "\e059";
+}
+.statistics:before {
+    content: "\e018";
+}
+.order:before {
+    content: "\e116";
+}
+.user:before {
+    content: "\e008";
+}
+.relations:before {
+    content: "\e178";
+}
+.password:before {
+    content: "\e033";
+}
