@@ -186,6 +186,55 @@ header .active {
 }
 
 /*side-bar-mini end*/
+
+/*side-bar-wide start*/
+
+.side-bar-wide {
+    width: 200px;
+}
+
+.side-bar-wide nav ul li a .icon,
+.side-bar-wide nav ul li a p {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.user-info-box img {
+    height: 50px;
+    width: 50px;
+}
+.user-info-box {
+    padding: 2em 1em;
+}
+.user-name {
+    color: #ffffff;
+}
+.user-department {
+    color: lavender;
+}
+.user-info-box span {
+    float: left;
+    display: block;
+}
+.side-bar-wide nav ul li ul {
+    display: none;
+}
+
+.side-bar-wide nav ul li a {
+    padding-left: 1em;
+}
+
+.side-bar-wide nav ul li {
+    padding: 1em 0;
+}
+
+.side-bar-wide nav ul li p {
+    margin-left: 1em;
+}
+
+/*side-bar-wide end*/
 /*font icon*/
 
 @font-face {
