@@ -4,5 +4,6 @@
 /bootstrap/
 /fonts-backup/
 /bg原图.jpg
-customer-system-new-style.iml
 .gitignore
+.idea
+customer-system-new-style.iml

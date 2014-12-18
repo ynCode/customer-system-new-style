@@ -150,7 +150,7 @@ header .active {
 }
 
 .side-bar-mini ul ul,
-.side-bar-mini p {
+.side-bar-mini nav p {
     display: none;
 }
 
@@ -212,6 +212,19 @@ header .active {
     color: #86BD63;
 }
 
+.side-bar-mini .copyright {
+    display: none;
+}
+
+.side-bar-mini .copyright-mini {
+    display: block;
+    color: #A9A9A9;
+    width: 100%;
+    transform:scale(0.8);
+    position: absolute;
+    bottom: 1em;
+}
+
 /*side-bar-mini end*/
 
 /*side-bar-wide start*/
@@ -262,12 +275,20 @@ header .active {
 .side-bar-wide .copyright {
     position: absolute;
     bottom: 1em;
-    text-align: center;
+    text-align: left;
     width: 100%;
     color: #A9A9A9;
     transform:scale(0.8333333);
 }
 
+.side-bar-wide .copyright p {
+    margin-bottom: 1em;
+}
+
+.side-bar-wide .copyright-mini {
+    display: none;
+    visibility: hidden;
+}
 /*side-bar-wide end*/
 /*font icon*/
 
