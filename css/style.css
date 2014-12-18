@@ -220,7 +220,7 @@ header .active {
     display: block;
     color: #A9A9A9;
     width: 100%;
-    transform:scale(0.8);
+    transform: scale(0.8);
     position: absolute;
     bottom: 1em;
 }
@@ -278,7 +278,7 @@ header .active {
     text-align: left;
     width: 100%;
     color: #A9A9A9;
-    transform:scale(0.8333333);
+    transform: scale(0.8333333);
 }
 
 .side-bar-wide .copyright p {
@@ -289,6 +289,7 @@ header .active {
     display: none;
     visibility: hidden;
 }
+
 /*side-bar-wide end*/
 /*font icon*/
 
