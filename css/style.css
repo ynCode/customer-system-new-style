@@ -37,8 +37,7 @@ header {
 }
 
 .logo {
-    display: inline-block;
-    /*    padding: 5px*/
+    float: left;
 }
 
 .logo:before {
@@ -86,10 +85,6 @@ header nav {
     padding-right: 30px;
 }
 
-.active {
-    text-shadow: 0 0 3px 1px #000;
-}
-
 header .active {
     color: #86BD63;
 }
@@ -114,6 +109,20 @@ header .active {
 .side-bar a:active,
 .side-bar a:hover {
     color: lavender;
+}
+
+.side-bar .active {
+    background: #373737;
+}
+
+.user-name {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.user-department {
+    color: lavender;
+    font-size: 1em;
 }
 
 /*side-bar base end*/
@@ -201,37 +210,40 @@ header .active {
     vertical-align: middle;
 }
 
-.user-info-box img {
+.side-bar-wide .user-info-box img {
     height: 50px;
     width: 50px;
+    float: left;
 }
-.user-info-box {
+
+.side-bar-wide .user-info-box {
     padding: 2em 1em;
 }
-.user-name {
-    color: #ffffff;
-}
-.user-department {
-    color: lavender;
-}
-.user-info-box span {
-    float: left;
+
+
+.side-bar-wide .user-info-box span {
+    margin: 0 0 0.5em 60px;
     display: block;
 }
+
 .side-bar-wide nav ul li ul {
     display: none;
 }
 
 .side-bar-wide nav ul li a {
-    padding-left: 1em;
-}
-
-.side-bar-wide nav ul li {
-    padding: 1em 0;
+    padding: 1em 0 1em 1em;
 }
 
 .side-bar-wide nav ul li p {
     margin-left: 1em;
+}
+
+.side-bar-wide .copyright {
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    width: 100%;
+    color: #A9A9A9;
 }
 
 /*side-bar-wide end*/
